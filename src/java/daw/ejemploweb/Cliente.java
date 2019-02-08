@@ -12,20 +12,17 @@ package daw.ejemploweb;
 public class Cliente {
     private String nombre;
     private String email;
-    private String edad;
+    private int edad;
 
-    public Cliente(String nombre, String email, String edad) {
+    public Cliente(String nombre, String email, int edad) {
         this.nombre = nombre;
         this.email = email;
         this.edad = edad;
     }
 
-    public String getEdad() {
-        return edad;
-    }
-
-    public void setEdad(String edad) {
-        this.edad = edad;
+    @Override
+    public String toString() {
+        return "Cliente{" + "nombre=" + nombre + ", email=" + email + ", edad=" + edad + '}';
     }
 
     public String getNombre() {
@@ -44,9 +41,12 @@ public class Cliente {
         this.email = email;
     }
 
-    @Override
-    public String toString() {
-        return "Cliente{" + "nombre=" + nombre + ", email=" + email + ", edad=" + edad + '}';
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
     
     

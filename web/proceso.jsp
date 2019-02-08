@@ -7,8 +7,6 @@
 <%@page import="daw.ejemploweb.Cliente" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="daw.ejemploweb.Cliente" %>
 
 <html>
 <head>
